@@ -15,7 +15,6 @@ El sistema incluye funciones diferenciadas, entre ellas la gestión de suscripci
 ## Decision Drivers
 
 * Mantener separadas las responsabilidades de las distintas funciones del backend.
-* Dar soporte a la separación de bases de datos por contexto (RD-9) minimizando la complejidad operativa.
 * Mantener sencillo el desarrollo, despliegue y mantenimiento.
 * No añadir distribución entre servicios si no hay un requisito de despliegue o escalado independiente.
 
