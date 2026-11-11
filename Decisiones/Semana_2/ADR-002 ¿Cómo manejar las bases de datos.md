@@ -64,7 +64,7 @@ La decisión se confirma cuando el diagrama de clases y paquetes del servidor mu
 * Good, because otorga control directo y total sobre las consultas SQL nativas y su optimización en PostgreSQL 19 (RD-3), útil por ejemplo para las consultas de las métricas de uso (noticias más leídas, tiempo de permanencia, tasas de rebote y conversión de lectores a suscriptores).
 * Good, because no hay que crear repositorios para ninguno de los dos perfiles (RD-4): los servicios consultan directamente la base de datos que necesitan.
 * Neutral, because traslada la responsabilidad de construir sentencias y gestionar conexiones a los propios servicios que solicitan los datos.
-- Bad, because mezcla la lógica de negocio con sentencias SQL y gestión de conexiones, rompiendo el principio de responsabilidad única en el modelo UML.
+* Bad, because mezcla la lógica de negocio con sentencias SQL y gestión de conexiones, rompiendo el principio de responsabilidad única en el modelo UML.
 * Bad, because obliga a seleccionar manualmente en múltiples puntos del código cuál de las dos bases de datos se debe consultar, aumentando el riesgo de errores y código duplicado.
 * Bad, because cualquier cambio en el esquema de una de las dos bases de datos obligaría a revisar todos los servicios que la consultan, repartidos por el código.
 
