@@ -25,7 +25,7 @@ El sistema corresponde a un periódico digital donde los lectores interactúan c
 
 ## Decision Outcome
 
-Elegir "Arquitectura Cliente-Servidor", because encaja de forma directa y natural con el modelo de peticiones y respuestas HTTP/REST impuesto por RD-1, ya que RD-1 impone que toda petición sea HTTP/REST y los clientes PC y Tablet se limitan a enviar peticiones a un único servidor que las atiende.
+Chosen option: "Arquitectura Cliente-Servidor", because encaja de forma directa y natural con el modelo de peticiones y respuestas HTTP/REST impuesto por RD-1, ya que RD-1 impone que toda petición sea HTTP/REST y los clientes PC y Tablet se limitan a enviar peticiones a un único servidor que las atiende.
 
 ### Consequences
 
