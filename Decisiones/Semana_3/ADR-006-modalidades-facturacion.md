@@ -1,5 +1,5 @@
 ---
-status: proposed
+status: accepted
 date: 2026-11-16
 decision-makers: Daniel Marcos Serrano, Jaime Bergad Lario
 consulted: Héctor Moreno García, Ivo Hagemann Martínez
