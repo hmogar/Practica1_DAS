@@ -10,11 +10,12 @@ informed: Raúl García Piedra
 
 ## Context and Problem Statement
 
-El sistema debe disponer de un módulo de pago online que gestione los ciclos de facturación de las suscripciones (RF-3). Según el Anexo I existen tres modalidades: trimestral (70 €), semestral (130 €) y anual (190 €), cada una con su periodo y su importe. Se debe decidir cómo se representan estas modalidades en el diseño y qué clase conoce el periodo y el importe de cada una.
+El sistema debe disponer de un módulo de pago online que gestione los ciclos de facturación de las suscripciones (RF-3). Según el Anexo I existen tres modalidades: trimestral (70 €), semestral (130 €) y anual (190 €), cada una con su periodo y su importe. El RF-4 establece que los pagos se repitan cada 3, 6 o 12 meses según la modalidad. Se debe decidir cómo se representan estas modalidades en el diseño y qué clase conoce el periodo y el importe de cada una.
 
 ## Decision Drivers
 
 * Representar las tres modalidades de facturación definidas en RF-3, cada una con su periodo y su importe.
+* Proporcionar a cada modalidad el periodo necesario para cumplir la recurrencia establecida en RF-4.
 * Poder añadir o modificar una modalidad sin cambiar la clase `Suscripcion`.
 * Mantener clara la responsabilidad de cada clase: la suscripción representa al suscriptor y su estado, y el ciclo de facturación representa las condiciones económicas.
 * Evitar una estructura de clases más compleja de lo que necesitan las diferencias reales entre modalidades.
