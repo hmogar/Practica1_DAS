@@ -25,7 +25,7 @@ El sistema debe permitir crear suscripciones anónimas (RF-1) y permitir que los
 
 ## Decision Outcome
 
-Propuesta: elegir "Modelo de dominio con reglas", porque permite que las operaciones de alta y baja definidas en RF-1 y RF-2 se expresen como comportamiento de la clase `Suscripcion`, mientras el servicio de aplicación coordina su ejecución.
+Chosen option: "Modelo de dominio con reglas", because permite que las operaciones de alta y baja definidas en RF-1 y RF-2 se expresen como comportamiento de la clase `Suscripcion`, mientras el servicio de aplicación coordina su ejecución.
 
 ### Consequences
 
@@ -53,4 +53,3 @@ La decisión se confirma cuando el diagrama muestra una clase `Suscripcion` con 
 * Bad, because hay que decidir qué comportamiento se asigna a la entidad y cuál al servicio de aplicación.
 
 ## More Information
-

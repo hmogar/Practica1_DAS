@@ -12,51 +12,46 @@ informed: Raúl García Piedra
 
 El sistema debe permitir a redactores y administradores consultar las métricas de uso definidas en RF-5: noticias más leídas, tiempo de permanencia, tasas de rebote y conversión de lectores a suscriptores.
 
-Se debe decidir qué clase asume la responsabilidad de ofrecer estas consultas y cómo colaboran con ella las clases que las solicitan o participan en los procesos relacionados con la lectura y las suscripciones. Esta decisión se limita a las responsabilidades y colaboraciones entre clases; no define cómo se transporta, almacena o recupera la información.
+Se debe decidir qué clase asume la responsabilidad de ofrecer estas consultas.
 
 ## Decision Drivers
 
 * Cumplir el requisito funcional RF-5 y ofrecer sus métricas a los usuarios autorizados.
 * Mantener en un lugar claro la responsabilidad de proporcionar las consultas estadísticas.
 * Permitir que redactores y administradores soliciten las métricas sin duplicar esa responsabilidad.
-* Representar colaboraciones comprensibles entre el módulo de estadísticas y las clases relacionadas con su consulta.
+* Representar de forma comprensible cómo se accede a las consultas estadísticas desde el controlador.
 
 ## Considered Options
 
-* **Módulo de estadísticas común:** `ModuloEstadisticas` ofrece las consultas; `Admin` y `Redactor` solicitan las métricas que necesitan. Los procesos de lectura y de suscripción colaboran con el módulo cuando aportan información relevante para las métricas.
+* **Módulo de estadísticas común**: `ModuloEstadisticas` ofrece todas las consultas; los usuarios con privilegios (administradores y redactores) las solicitan a través de ControladorHTTP.
 * **Módulos separados por ámbito:** un módulo ofrece estadísticas de lectura y otro ofrece estadísticas de suscripción; `Admin` y `Redactor` coordinan las consultas a ambos.
 * **Responsabilidad distribuida:** las clases `Admin`, `Redactor` y `GestorSuscripciones` implementan cada una las consultas relacionadas con su ámbito.
 
 ## Decision Outcome
 
-Propuesta: elegir **Módulo de estadísticas común**, porque concentra la responsabilidad de ofrecer las métricas de RF-5 y permite que `Admin` y `Redactor` colaboren con la misma clase sin duplicar consultas. Los procesos de lectura y de suscripción aportan al módulo la información pertinente para las métricas de uso y conversión, sin que esta decisión determine el mecanismo técnico de esa colaboración.
+Chosen option: "Módulo de estadísticas común", because concentra la responsabilidad de ofrecer las métricas de RF-5 y permite que todos los usuarios con privilegios consulten la misma clase sin duplicar consultas.
 
 ### Consequences
 
-* Good, because `Admin` y `Redactor` consultan un módulo común y comparten la misma responsabilidad estadística.
-* Good, because la lógica de consulta de las métricas no se reparte entre las clases de usuario ni entre las clases de suscripción.
-* Good, because las colaboraciones necesarias para las métricas de lectura y conversión quedan representadas en el diseño.
+* Good, because los usuarios con privilegios consultan un módulo común y comparten la misma responsabilidad estadística.
+* Good, because la lógica de consulta de las métricas no se reparte entre otras clases.
 * Bad, because `ModuloEstadisticas` concentra varias responsabilidades de consulta y podría crecer si se incorporan muchas métricas nuevas.
-* Bad, because deben definirse los contratos de colaboración entre el módulo y las clases que aportan información relevante.
 
 ### Confirmation
 
 La decisión se confirma cuando el diagrama de clases muestra:
 
-* `ModuloEstadisticas` como responsable de ofrecer las consultas de RF-5;
-* `Admin` y `Redactor` colaborando con `ModuloEstadisticas` para solicitar métricas;
-* las clases de los procesos de lectura y suscripción colaborando con el módulo respecto a la información relevante para las métricas;
-* la responsabilidad estadística concentrada en el módulo común, sin duplicarla en las clases solicitantes.
+* ModuloEstadisticas como responsable de ofrecer las consultas de RF-5;
+* ControladorHTTP encaminando las peticiones de métricas hacia ModuloEstadisticas;
+* la responsabilidad estadística concentrada en el módulo común, sin duplicarla en otras clases
 
 ## Pros and Cons of the Options
 
 ### Módulo de estadísticas común
 
 * Good, because reúne en una clase la responsabilidad de ofrecer las métricas solicitadas por distintos perfiles.
-* Good, because evita que `Admin` y `Redactor` implementen por separado las mismas consultas.
-* Good, because permite representar una colaboración común con los procesos relacionados con lectura y suscripción.
+* Good, because evita que cada tipo de usuario implemente por separado las mismas consultas.
 * Bad, because el módulo puede acumular demasiadas responsabilidades si el conjunto de métricas crece.
-* Bad, because hay que acordar qué información aporta cada clase colaboradora.
 
 ### Módulos separados por ámbito
 

@@ -28,7 +28,7 @@ El sistema debe disponer de un módulo de pago online que gestione los ciclos de
 
 ## Decision Outcome
 
-Propuesta: elegir "Composición con Strategy", porque separa las condiciones de cada modalidad de la clase `Suscripcion`, de modo que la modalidad se puede asignar o cambiar sin crear otro tipo de suscripción y una modalidad nueva solo requiere una nueva implementación de la interfaz.
+Chosen option: "Composición con Strategy", because separa las condiciones de cada modalidad de la clase `Suscripcion`, de modo que la modalidad se puede asignar o cambiar sin crear otro tipo de suscripción y una modalidad nueva solo requiere una nueva implementación de la interfaz.
 
 `CicloFacturacion` define las operaciones para obtener el importe y calcular la fecha del siguiente periodo de facturación. `CicloTrimestral`, `CicloSemestral` y `CicloAnual` la implementan con sus valores (3, 6 y 12 meses; 70, 130 y 190 €). `Suscripcion` mantiene una referencia a su `CicloFacturacion` y le delega esos cálculos.
 
@@ -71,5 +71,4 @@ La decisión se confirma cuando el diagrama muestra la interfaz `CicloFacturacio
 ## More Information
 
 Esta decisión se centra en cómo se representan las modalidades de facturación y no en cómo ni cuándo se ejecuta el cobro. `Suscripcion` es la clase de ADR-005, que no cambia por esta decisión: aquí solo se le asocia un `CicloFacturacion`.
-
 
