@@ -270,8 +270,8 @@
 											},
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 1939,
-											"top": 755,
+											"left": 1981,
+											"top": 900,
 											"width": 275.52978515625,
 											"height": 13,
 											"text": "«Base de datos»"
@@ -284,11 +284,11 @@
 											},
 											"font": "Arial;13;1",
 											"parentStyle": true,
-											"left": 1939,
-											"top": 770,
+											"left": 1981,
+											"top": 915,
 											"width": 275.52978515625,
 											"height": 13,
-											"text": "PostgreSQL 19 Administradores/Redactores"
+											"text": "PostgreSQL 19"
 										},
 										{
 											"_type": "LabelView",
@@ -299,8 +299,8 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 708,
-											"top": 428,
+											"left": 792,
+											"top": 718,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -314,16 +314,16 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"parentStyle": true,
-											"left": 708,
-											"top": 428,
+											"left": 792,
+											"top": 718,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"parentStyle": true,
-									"left": 1934,
-									"top": 750,
+									"left": 1976,
+									"top": 895,
 									"width": 285.52978515625,
 									"height": 38,
 									"stereotypeLabel": {
@@ -343,8 +343,8 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"containerChangeable": true,
-							"left": 1934,
-							"top": 735,
+							"left": 1976,
+							"top": 880,
 							"width": 284.52978515625,
 							"height": 100,
 							"nameCompartment": {
@@ -1313,213 +1313,6 @@
 							},
 							"propertyLabel": {
 								"$ref": "AAAAAAGh5YGY2GOT2ew="
-							}
-						},
-						{
-							"_type": "UMLPackageView",
-							"_id": "AAAAAAGh5YJGIGO1GJs=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"model": {
-								"$ref": "AAAAAAGh5YJGIGOz1Kc="
-							},
-							"subViews": [
-								{
-									"_type": "UMLNameCompartmentView",
-									"_id": "AAAAAAGh5YJGIGO2H6U=",
-									"_parent": {
-										"$ref": "AAAAAAGh5YJGIGO1GJs="
-									},
-									"model": {
-										"$ref": "AAAAAAGh5YJGIGOz1Kc="
-									},
-									"subViews": [
-										{
-											"_type": "LabelView",
-											"_id": "AAAAAAGh5YJGIGO3H88=",
-											"_parent": {
-												"$ref": "AAAAAAGh5YJGIGO2H6U="
-											},
-											"font": "Arial;13;0",
-											"parentStyle": true,
-											"left": 1892,
-											"top": 1080,
-											"width": 372,
-											"height": 13,
-											"text": "«Base de datos»"
-										},
-										{
-											"_type": "LabelView",
-											"_id": "AAAAAAGh5YJGIGO41s4=",
-											"_parent": {
-												"$ref": "AAAAAAGh5YJGIGO2H6U="
-											},
-											"font": "Arial;13;1",
-											"parentStyle": true,
-											"left": 1892,
-											"top": 1095,
-											"width": 372,
-											"height": 13,
-											"text": "PostgreSQL 19 Suscriptores"
-										},
-										{
-											"_type": "LabelView",
-											"_id": "AAAAAAGh5YJGIGO5UCs=",
-											"_parent": {
-												"$ref": "AAAAAAGh5YJGIGO2H6U="
-											},
-											"visible": false,
-											"font": "Arial;13;0",
-											"parentStyle": true,
-											"left": -6,
-											"top": 270,
-											"width": 73.67724609375,
-											"height": 13,
-											"text": "(from Model)"
-										},
-										{
-											"_type": "LabelView",
-											"_id": "AAAAAAGh5YJGIGO6qfQ=",
-											"_parent": {
-												"$ref": "AAAAAAGh5YJGIGO2H6U="
-											},
-											"visible": false,
-											"font": "Arial;13;0",
-											"parentStyle": true,
-											"left": -6,
-											"top": 270,
-											"height": 13,
-											"horizontalAlignment": 1
-										}
-									],
-									"font": "Arial;13;0",
-									"parentStyle": true,
-									"left": 1887,
-									"top": 1075,
-									"width": 382,
-									"height": 38,
-									"stereotypeLabel": {
-										"$ref": "AAAAAAGh5YJGIGO3H88="
-									},
-									"nameLabel": {
-										"$ref": "AAAAAAGh5YJGIGO41s4="
-									},
-									"namespaceLabel": {
-										"$ref": "AAAAAAGh5YJGIGO5UCs="
-									},
-									"propertyLabel": {
-										"$ref": "AAAAAAGh5YJGIGO6qfQ="
-									}
-								}
-							],
-							"font": "Arial;13;0",
-							"parentStyle": false,
-							"containerChangeable": true,
-							"left": 1887,
-							"top": 1060,
-							"width": 381,
-							"height": 83,
-							"nameCompartment": {
-								"$ref": "AAAAAAGh5YJGIGO2H6U="
-							}
-						},
-						{
-							"_type": "UMLDependencyView",
-							"_id": "AAAAAAGh5YMWEmPWPr4=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"model": {
-								"$ref": "AAAAAAGh5YMWEmPUPg4="
-							},
-							"subViews": [
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAGh5YMWEmPXSKk=",
-									"_parent": {
-										"$ref": "AAAAAAGh5YMWEmPWPr4="
-									},
-									"model": {
-										"$ref": "AAAAAAGh5YMWEmPUPg4="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"parentStyle": false,
-									"left": 1820,
-									"top": 1080,
-									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 15,
-									"hostEdge": {
-										"$ref": "AAAAAAGh5YMWEmPWPr4="
-									},
-									"edgePosition": 1
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAGh5YMWEmPYDB0=",
-									"_parent": {
-										"$ref": "AAAAAAGh5YMWEmPWPr4="
-									},
-									"model": {
-										"$ref": "AAAAAAGh5YMWEmPUPg4="
-									},
-									"visible": null,
-									"font": "Arial;13;0",
-									"parentStyle": false,
-									"left": 1820,
-									"top": 1065,
-									"height": 13,
-									"alpha": 1.5707963267948966,
-									"distance": 30,
-									"hostEdge": {
-										"$ref": "AAAAAAGh5YMWEmPWPr4="
-									},
-									"edgePosition": 1
-								},
-								{
-									"_type": "EdgeLabelView",
-									"_id": "AAAAAAGh5YMWEmPZOzY=",
-									"_parent": {
-										"$ref": "AAAAAAGh5YMWEmPWPr4="
-									},
-									"model": {
-										"$ref": "AAAAAAGh5YMWEmPUPg4="
-									},
-									"visible": false,
-									"font": "Arial;13;0",
-									"parentStyle": false,
-									"left": 1820,
-									"top": 1110,
-									"height": 13,
-									"alpha": -1.5707963267948966,
-									"distance": 15,
-									"hostEdge": {
-										"$ref": "AAAAAAGh5YMWEmPWPr4="
-									},
-									"edgePosition": 1
-								}
-							],
-							"font": "Arial;13;0",
-							"parentStyle": false,
-							"head": {
-								"$ref": "AAAAAAGh5YJGIGO1GJs="
-							},
-							"tail": {
-								"$ref": "AAAAAAGh5XdqpmIFp/8="
-							},
-							"lineStyle": 1,
-							"points": "1755:1101;1886:1101",
-							"showVisibility": true,
-							"nameLabel": {
-								"$ref": "AAAAAAGh5YMWEmPXSKk="
-							},
-							"stereotypeLabel": {
-								"$ref": "AAAAAAGh5YMWEmPYDB0="
-							},
-							"propertyLabel": {
-								"$ref": "AAAAAAGh5YMWEmPZOzY="
 							}
 						},
 						{
@@ -2553,8 +2346,8 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 1880,
-									"top": 765,
+									"left": 1909,
+									"top": 829,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -2575,8 +2368,8 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 1880,
-									"top": 750,
+									"left": 1914,
+									"top": 815,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -2597,8 +2390,8 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 1880,
-									"top": 795,
+									"left": 1898,
+									"top": 858,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -2617,7 +2410,7 @@
 								"$ref": "AAAAAAGh5YXE/GSiAgc="
 							},
 							"lineStyle": 1,
-							"points": "1827:787;1933:786",
+							"points": "1827:821;1982:879",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGh5YaP6GTUD0Q="
@@ -5660,6 +5453,104 @@
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAGh6k/qgFzsKb4="
 							}
+						},
+						{
+							"_type": "UMLDependencyView",
+							"_id": "AAAAAAGh75mYcFjyosc=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGh75mYcFjw7JE="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGh75mYcFjznpQ=",
+									"_parent": {
+										"$ref": "AAAAAAGh75mYcFjyosc="
+									},
+									"model": {
+										"$ref": "AAAAAAGh75mYcFjw7JE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1860,
+									"top": 1000,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGh75mYcFjyosc="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGh75mYcFj0alI=",
+									"_parent": {
+										"$ref": "AAAAAAGh75mYcFjyosc="
+									},
+									"model": {
+										"$ref": "AAAAAAGh75mYcFjw7JE="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1855,
+									"top": 986,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGh75mYcFjyosc="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGh75mYcFj1ejk=",
+									"_parent": {
+										"$ref": "AAAAAAGh75mYcFjyosc="
+									},
+									"model": {
+										"$ref": "AAAAAAGh75mYcFjw7JE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1871,
+									"top": 1029,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGh75mYcFjyosc="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGh5XOEt2DEbDM="
+							},
+							"tail": {
+								"$ref": "AAAAAAGh5XdqpmIFp/8="
+							},
+							"lineStyle": 1,
+							"points": "1755:1061;1977:981",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAGh75mYcFjznpQ="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGh75mYcFj0alI="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGh75mYcFj1ejk="
+							}
 						}
 					]
 				},
@@ -5730,7 +5621,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "PostgreSQL 19 Administradores/Redactores",
+					"name": "PostgreSQL 19",
 					"stereotype": "Base de datos"
 				},
 				{
@@ -5838,6 +5729,19 @@
 									},
 									"target": {
 										"$ref": "AAAAAAGh5YJGIGOz1Kc="
+									}
+								},
+								{
+									"_type": "UMLDependency",
+									"_id": "AAAAAAGh75mYcFjw7JE=",
+									"_parent": {
+										"$ref": "AAAAAAGh5XdqpmIDK4g="
+									},
+									"source": {
+										"$ref": "AAAAAAGh5XdqpmIDK4g="
+									},
+									"target": {
+										"$ref": "AAAAAAGh5XOEt2DCvfs="
 									}
 								}
 							],
